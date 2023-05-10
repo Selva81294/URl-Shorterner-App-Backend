@@ -22,9 +22,6 @@ app.use(express.json());
 app.use(cors())
 
 //middlewares for routers
-app.use("/",(req,res)=>{
-    res.send("Welcome to URL-Shortener-APP")
-})
 app.use('/login', loginRouter)
 app.use('/signup', signupRouter)
 app.use('/forgotpassword', forgotPasswordRouter)
