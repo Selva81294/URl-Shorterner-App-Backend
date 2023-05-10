@@ -23,7 +23,7 @@ forgotPasswordRouter.post("/", async (req, res) => {
       expiresIn: "15m",
     });
 
-    const link = `http://localhost:5000/resetpassword/${oldUser._id}/${token}`;
+    const link = `https://url-shortener-app-cubz.onrender.com/resetpassword/${oldUser._id}/${token}`;
     
     var transporter = nodemailer.createTransport({
       service: "gmail",

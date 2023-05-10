@@ -62,7 +62,7 @@ router.get("/:urlId", async (req, res) => {
 router.get("/delete/:id", async (req,res)=>{
     try {
         await URLShort.findByIdAndDelete({_id: req.params.id})
-        res.redirect("http://localhost:3000/")
+        res.redirect("https://main--roaring-narwhal-9deaa8.netlify.app/")
     } catch (error) {
         console.log(error);
         res.status(500).json({ message: "Internal Server Error" }); 
